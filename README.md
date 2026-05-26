@@ -11,6 +11,20 @@ Check out my [YouTube video](https://youtu.be/M51bMMVWbC8?si=pfud7bHgjYDnO2_z) f
 
 Thank you to JLCCNC for helping create the extruder mount and build plate for my [4 Axis Core R-Theta Printer](https://github.com/jyjblrd/Core-R-Theta-4-Axis-Printer).
 
+## Native port (in progress)
+
+A Zig + WebGPU (wgpu-native) rewrite is in progress to replace the Python notebook for desktop slicing with GPU acceleration. See the milestone notes below; the notebook (`main.ipynb`) remains the reference implementation until parity is reached.
+
+Build:
+
+```
+zig build            # produces zig-out/bin/s4slicer
+zig build test
+zig build run -- input_models/<name>.stl input_gcode/<name>.gcode -o output_gcode/<name>.gcode
+```
+
+Status: **M0 — scaffold.** CLI parses args; pipeline stages land milestone-by-milestone (see `/root/.claude/plans/right-now-this-is-spicy-sunset.md` if working with Claude Code, or the commit history).
+
 
 
 Bibtex Citation:
