@@ -15,6 +15,8 @@ Thank you to JLCCNC for helping create the extruder mount and build plate for my
 
 A Zig + WebGPU (wgpu-native) rewrite is in progress to replace the Python notebook for desktop slicing with GPU acceleration. See the milestone notes below; the notebook (`main.ipynb`) remains the reference implementation until parity is reached.
 
+Requires **Zig 0.16+** (uses the new `std.process.Init` / `std.Io` APIs).
+
 Build:
 
 ```
