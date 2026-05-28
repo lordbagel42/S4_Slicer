@@ -1,0 +1,6 @@
+zig-out/
+.zig-cache/
+zig-cache/
+tetgen-tmpfile_*
+*.o
+input_models/benchy.stl
